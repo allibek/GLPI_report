@@ -1,5 +1,5 @@
 # GLPI_report
-GLPI report(to xls file) for big organization with mani entityes.<br>
+GLPI report(to xls file) for big organization with many entities.<br>
 report represents next data:<br>
 Total number of computers <br>
 Number of computers with a single core processor<br>
