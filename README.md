@@ -1,7 +1,7 @@
 # GLPI_report
 GLPI report(to xls file) for big organization with mani entityes.
 report represents next data:
-Total number of computers
+Total number of computers <br>
 Number of computers with a single core processor
 Number of computers with a dual-core processor and frequency <= 3000
 Number of computers with a dual-core processor and frequency > 3000
@@ -36,5 +36,3 @@ Number of inline scanners where scan speed >= 25
 Number of inline scanners where scan speed < 25
 Total number of UPS
 technological computers
-
-
