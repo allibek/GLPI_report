@@ -3,7 +3,7 @@ from openpyxl import load_workbook
 from mysql.connector import (connection)
 
 if __name__ == "__main__" :
-    glpi_connection = connection.MySQLConnection(user='', password='', host='10.32.100.82', database='glpi')
+    glpi_connection = connection.MySQLConnection(user='', password='', host='10.32.10.82', database='glpi')
     entities = pd.read_sql('select id, name, name as names, comment from glpi_entities order by (comment * 1)', con=glpi_connection)
     pc = pd.read_sql('select id, name, otherserial, entities_id, computertypes_id, states_id from glpi_computers where is_deleted = 0 and otherserial is not null and otherserial != ""', con=glpi_connection)
     printers = pd.read_sql('select id, name, otherserial, entities_id, printertypes_id  from glpi_printers where is_deleted = 0 and otherserial is not null and otherserial != ""', con=glpi_connection)
